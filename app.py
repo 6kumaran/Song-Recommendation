@@ -7,13 +7,13 @@ from tensorflow.keras.models import load_model
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Load a pre-trained emotion recognition model (this is just an example, you need a model file)
-emotion_model = load_model('C:/Users/KUMARAN/OneDrive/Desktop/Emotion Detection/model.h5')
+emotion_model = load_model('model.h5')
 
 # Define emotion labels
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 
 # Load music data
-Music_Player = pd.read_csv("C:/Users/KUMARAN/OneDrive/Desktop/Spotify_Music_data_to_identify_the_moods/data_moods.csv")
+Music_Player = pd.read_csv("data_moods.csv")
 Music_Player = Music_Player[['name', 'artist', 'mood', 'popularity']]
 
 # Function to detect emotions
