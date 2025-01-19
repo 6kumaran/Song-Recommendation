@@ -3,5 +3,5 @@ libglib2.0-0
 streamlit
 tensorflow
 pandas
-opencv-python
+opencv-python-headless
 numpy
